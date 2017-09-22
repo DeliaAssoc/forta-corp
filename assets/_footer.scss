@@ -1,0 +1,20 @@
+.main-footer {
+	background-color: $darkest;
+	color: $white-color;
+
+	> .flexxed {
+		flex-direction: column;
+	}
+
+	.footer-block {
+		text-align: center;
+	}
+
+	a {
+		color: $white-color;
+	}
+
+	.title {
+		color: $lt-gray;
+	}
+}

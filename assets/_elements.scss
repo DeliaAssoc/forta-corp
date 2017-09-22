@@ -10,3 +10,41 @@
 	color: #fff;
 	text-shadow: none;
 }
+
+body {
+	color: $font-color;
+	line-height: 1.65em;
+}
+
+ol {
+	margin: 0 0 1.5em 1em;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+
+	li {
+		list-style-type: none;
+	}
+}
+
+a {
+	text-decoration: none;
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+}

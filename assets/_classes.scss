@@ -1,3 +1,133 @@
 // ---------------------------------------------------
 //    #Clear Fix
 // ---------------------------------------------------
+
+
+.constrain {
+	display: block;
+	margin: 0 auto;
+	max-width: 1024px;
+	min-width: 320px;
+	padding: 0 10px;
+}
+
+.flexxed {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.social-media-links {
+	width: 40%;
+	max-width: 120px;
+
+	&.flexxed {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row;
+		        flex-flow: row;
+		    -webkit-box-pack: justify;
+		        -ms-flex-pack: justify;
+		            justify-content: space-between;
+	}
+
+	a {
+		position: relative;
+		display: block;
+		width: 20px;
+		height: 24px;
+
+		text-indent: -99999px;
+
+		&.facebook-icon:before,
+		&.twitter-icon:before,
+		&.gplus-icon:before,
+		&.linkedin-icon:before,
+		&.youtube-icon:before,
+		&.vimeo-icon:before,
+		&.pinterest-icon:before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: 0 auto;
+
+			font-family: $fa;
+			font-size: 18px;
+			text-indent: 0;
+		}
+
+		&.facebook-icon:before {
+			content: '\f09a';
+		}
+
+		&.twitter-icon:before {
+			content: '\f099';
+		}
+
+		&.gplus-icon:before {
+			content: '\f0d5';
+		}
+
+		&.linkedin-icon:before {
+			content: '\f0e1';
+		}
+
+		&.youtube-icon:before {
+			content: '\f16a';
+			font-size: 16px;
+		}
+
+		&.vimeo-icon:before {
+			content: '\f27d';
+		}
+
+		&.pinterest-icon:before {
+			content: '\f231';
+		}
+
+	}
+}
+
+.back-to-top {
+	display: block;
+	border-radius: 3px;
+	bottom: 10px;
+	height: 44px;
+	opacity: .5;
+	position: fixed;
+	right: -50px;
+	width: 44px;
+	z-index: 999;
+
+	-webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,.15);
+	box-shadow: 2px 2px 5px 1px rgba(0,0,0,.15);
+
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+
+	&.visible {
+		right: 10px;
+
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-ms-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+	}
+}
+
+.back-to-top:after {
+	color: $white-color;
+	content: '\f0d8';
+	display: block;
+    font-family: 'FontAwesome', dingbats, Helvetica, sans-serif;
+    font-size: 40px;
+    left: 11px;
+    position: absolute;
+    top: 7px;
+}
