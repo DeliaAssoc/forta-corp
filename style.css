@@ -430,7 +430,7 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -1122,6 +1122,11 @@ a:active {
 /*--------------------------------------------------------------
 # Main Content Layout Classes
 --------------------------------------------------------------*/
+/* line 5, assets/_content.scss */
+.menu-menu-1-container {
+  text-transform: uppercase;
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -1142,22 +1147,60 @@ a:active {
 .main-footer {
   background-color: #333333;
   color: #FFFFFF;
+  padding: 30px 0;
 }
-/* line 5, assets/_footer.scss */
+/* line 6, assets/_footer.scss */
 .main-footer > .flexxed {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
-/* line 9, assets/_footer.scss */
+/* line 13, assets/_footer.scss */
+.main-footer .col1 {
+  margin: 0 0 20px 0;
+}
+/* line 17, assets/_footer.scss */
+.main-footer .col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+/* line 29, assets/_footer.scss */
+.main-footer .col2 > div {
+  margin-bottom: 20px;
+}
+/* line 34, assets/_footer.scss */
+.main-footer .address,
+.main-footer .contact {
+  display: block;
+}
+/* line 39, assets/_footer.scss */
 .main-footer .footer-block {
   text-align: center;
 }
-/* line 13, assets/_footer.scss */
+/* line 43, assets/_footer.scss */
 .main-footer a {
   color: #FFFFFF;
 }
-/* line 17, assets/_footer.scss */
+/* line 47, assets/_footer.scss */
 .main-footer .title {
   color: #bcbec0;
+}
+/* line 51, assets/_footer.scss */
+.main-footer .social-media-links {
+  margin: 0 auto;
+}
+/* line 55, assets/_footer.scss */
+.main-footer .legal-box {
+  font-size: 12px;
 }
 
 /*--------------------------------------------------------------
@@ -1274,14 +1317,102 @@ object {
   display: block;
 }
 
+@media only screen and (min-width: 768px) {
+  /* line 5, assets/_media-queries.scss */
+  .main-footer > .flexxed {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* line 10, assets/_media-queries.scss */
+  .main-footer .footer-block {
+    width: 50%;
+  }
+}
 @media only screen and (min-width: 1024px) {
-  /* line 3, assets/_media-queries.scss */
+  /* line 19, assets/_media-queries.scss */
   .mobile-nav {
     display: none;
   }
 
-  /* line 7, assets/_media-queries.scss */
+  /* line 23, assets/_media-queries.scss */
   .mobile-nav-btn {
     display: none;
+  }
+
+  /* line 29, assets/_media-queries.scss */
+  .main-header .main-navigation {
+    display: block;
+  }
+  /* line 33, assets/_media-queries.scss */
+  .main-header .social-media-links {
+    display: inherit;
+  }
+
+  /* line 41, assets/_media-queries.scss */
+  .main-footer .col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* line 47, assets/_media-queries.scss */
+  .main-footer .col2 {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  /* line 59, assets/_media-queries.scss */
+  .main-footer .menu-menu-1-container {
+    width: 60%;
+  }
+  /* line 62, assets/_media-queries.scss */
+  .main-footer .menu-menu-1-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 30px 0 0;
+  }
+  /* line 73, assets/_media-queries.scss */
+  .main-footer .social-media-links {
+    margin: 0;
+  }
+  /* line 77, assets/_media-queries.scss */
+  .main-footer .legal-box {
+    display: inline-block;
+  }
+
+  /* line 83, assets/_media-queries.scss */
+  .footer-address {
+    text-align: left;
+  }
+  /* line 86, assets/_media-queries.scss */
+  .footer-address .address {
+    display: inline-block;
+    padding: 0 5px 0 0;
+  }
+  /* line 91, assets/_media-queries.scss */
+  .footer-address .contact {
+    display: inline-block;
+    padding: 0 15px 0 0;
+    position: relative;
+  }
+  /* line 96, assets/_media-queries.scss */
+  .footer-address .contact:after {
+    content: '|';
+    position: absolute;
+    right: 3px;
+    top: 0;
+  }
+  /* line 103, assets/_media-queries.scss */
+  .footer-address .contact:last-of-type:after {
+    content: '';
   }
 }

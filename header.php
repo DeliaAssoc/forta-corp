@@ -41,8 +41,9 @@ $socialArray = array(
 		.site-font-accent { color:  <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
 		.site-accent-border { border-color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?> !important;  }
 		.main-navigation li a:hover { color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
-		.footer-menu li a:hover { color:  <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
-		.footer-menu li a:before { color:  <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
+		footer a:hover { color:  <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
+		footer li a:before { color:  <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
+		.footer-address .contact:after { color:  <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
 		h2, h3 { color:  <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>;border-color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?> }
 	</style>
 	<?php endif; ?>

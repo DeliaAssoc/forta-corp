@@ -35,11 +35,11 @@
 							</span>
 						<?php endif; ?>
 					</div>
+				</div>
 				<div class="footer-block col2">
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'footer-menu',
-							// 'menu_id'        => 'footer_menu',
 						) );
 					?>
 					<?php
@@ -78,11 +78,12 @@
 							<?php endif; ?>
 						</div>
 					<?php endif; ?>
-					<div class="legal-box">
-					&copy;<?php the_date( 'Y' ); ?> - <?php bloginfo( 'name' ); ?><sup>®</sup>&nbsp;Corporation
+					<div class="legal-block">
+						<div class="legal-box">&copy;<?php the_date( 'Y' ); ?> - <?php bloginfo( 'name' ); ?><sup>®</sup>&nbsp;Corporation
+						</div>
+						<div class="legal-box">All Rights Reserved</div>
+						<div class="legal-box"><?php if ( get_theme_mod( 'forta_privacy_policy' ) ){ echo '<a href="' . get_theme_mod( 'forta_privacy_policy' ) . '">Privacy Policy</a>'; }?></div>
 					</div>
-					<div class="legal-box">All Rights Reserved</div>
-					<div class="legal-box"><?php if ( get_theme_mod( 'forta_privacy_policy' ) ){ echo '<a href="' . get_theme_mod( 'forta_privacy_policy' ) . '">Privacy Policy</a>'; }?></div>
 				</div>
 			</div><!-- .constrain -->
 		</div><!-- .main-footer -->
