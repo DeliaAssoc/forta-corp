@@ -7,7 +7,9 @@ jQuery(document).ready(function($) {
 		$mobileBtn = $mainHeader.find( '.mobile-nav-btn' ),
 		$mobileMenu = $( '.mobile-nav' ),
 		$mobileNavHeight = $mobileMenu.outerHeight(),
-		$mobileClose = $mobileMenu.find( '#close-this' );
+		$mobileClose = $mobileMenu.find( '#close-this' ),
+		$hPageLogoHeight = $( '.logo-container' ).outerHeight(),
+		$hMainContent = $( '.main-content' );
 
 	// If window is smaller than 1024px
 	if ( $winWidth < 1024 )
@@ -25,6 +27,18 @@ jQuery(document).ready(function($) {
 			});
 		});
 	}
+
+	// Move homepage main content down to allow for absolute logo
+	$hMainContent.css( 'paddingTop',  $hPageLogoHeight / 2 );
+
+	// Reevaluate on resize
+	$( window ).resize( function()
+		{
+			$hPageLogoHeight = $( '.logo-container' ).outerHeight(),
+			$hMainContent = $( '.main-content' );
+			
+			$hMainContent.css( 'paddingTop',  $hPageLogoHeight / 2 );
+		});
 
 	// Smooth Scroll for Back To Top Button *Thank you CSS-TRICKS*
 	$('a[href*="#"]:not([href="#"])').click(function() {

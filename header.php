@@ -37,6 +37,8 @@ $socialArray = array(
 
 	<?php if ( get_theme_mod( 'forta_corporate_accent_color' ) ) : ?>
 	<style>
+		::-moz-selection { background-color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>;}
+		::selection { background-color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
 		.site-accent { background-color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
 		.site-font-accent { color:  <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
 		.site-accent-border { border-color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?> !important;  }

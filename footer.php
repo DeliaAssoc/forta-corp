@@ -26,7 +26,7 @@
 						<span class="address"><?php echo get_theme_mod( 'forta_corporate_company_zip' ); ?> <?php echo get_theme_mod( 'forta_corporate_company_country' ); ?></span>
 						<?php if ( get_theme_mod( 'forta_corporate_company_tollfree' ) ) : ?>
 							<span class="contact">
-								<span class="title">Toll Free:</span> <a href="<?php echo get_theme_mod( 'forta_corporate_company_tollfree' ); ?>"><?php echo get_theme_mod( 'forta_corporate_company_tollfree' ); ?></a>
+								<span class="title">Toll Free:</span> <a href="tel:<?php echo get_theme_mod( 'forta_corporate_company_tollfree' ); ?>"><?php echo get_theme_mod( 'forta_corporate_company_tollfree' ); ?></a>
 							</span>
 						<?php endif; ?>
 						<?php if ( get_theme_mod( 'forta_corporate_company_email' ) ) : ?>
