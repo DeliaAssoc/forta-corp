@@ -1066,12 +1066,14 @@ a:active {
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+  -webkit-box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 56, assets/_header.scss */
+/* line 59, assets/_header.scss */
 .main-header .main-navigation {
   display: none;
 }
-/* line 60, assets/_header.scss */
+/* line 63, assets/_header.scss */
 .main-header .mobile-nav-btn {
   position: absolute;
   right: 5px;
@@ -1080,7 +1082,7 @@ a:active {
   color: #333333;
   font-size: 24px;
 }
-/* line 70, assets/_header.scss */
+/* line 73, assets/_header.scss */
 .main-header .social-media-links {
   display: none;
 }
@@ -1389,9 +1391,12 @@ object {
   }
   /* line 79, assets/_media-queries.scss */
   .main-footer .col2 {
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
+    color: #bcbec0;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-orient: horizontal;
@@ -1399,11 +1404,23 @@ object {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  /* line 91, assets/_media-queries.scss */
+  /* line 93, assets/_media-queries.scss */
+  .main-footer .col2 a {
+    color: #bcbec0;
+  }
+  /* line 97, assets/_media-queries.scss */
+  .main-footer .col2 .menu-menu-1-container {
+    margin: 0;
+  }
+  /* line 101, assets/_media-queries.scss */
+  .main-footer .col2 .social-media-links {
+    margin: 0;
+  }
+  /* line 106, assets/_media-queries.scss */
   .main-footer .menu-menu-1-container {
     width: 60%;
   }
-  /* line 94, assets/_media-queries.scss */
+  /* line 109, assets/_media-queries.scss */
   .main-footer .menu-menu-1-container ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1413,38 +1430,55 @@ object {
     justify-content: space-between;
     margin: 0 30px 0 0;
   }
-  /* line 105, assets/_media-queries.scss */
+  /* line 120, assets/_media-queries.scss */
   .main-footer .social-media-links {
     margin: 0;
   }
-  /* line 109, assets/_media-queries.scss */
+  /* line 124, assets/_media-queries.scss */
   .main-footer .legal-box {
     display: inline-block;
+    padding: 0 20px 0 0;
+    position: relative;
+  }
+  /* line 129, assets/_media-queries.scss */
+  .main-footer .legal-box:last-of-type {
+    padding: 0;
+  }
+  /* line 132, assets/_media-queries.scss */
+  .main-footer .legal-box:last-of-type:after {
+    content: none;
+  }
+  /* line 137, assets/_media-queries.scss */
+  .main-footer .legal-box:after {
+    content: '|';
+    position: absolute;
+    right: 7px;
+    top: 0;
   }
 
-  /* line 115, assets/_media-queries.scss */
+  /* line 147, assets/_media-queries.scss */
   .footer-address {
     text-align: left;
   }
-  /* line 118, assets/_media-queries.scss */
+  /* line 150, assets/_media-queries.scss */
   .footer-address .address {
     display: inline-block;
     padding: 0 5px 0 0;
   }
-  /* line 123, assets/_media-queries.scss */
+  /* line 155, assets/_media-queries.scss */
   .footer-address .contact {
     display: inline-block;
     padding: 0 15px 0 0;
     position: relative;
   }
-  /* line 128, assets/_media-queries.scss */
+  /* line 160, assets/_media-queries.scss */
   .footer-address .contact:after {
     content: '|';
     position: absolute;
     right: 3px;
     top: 0;
   }
-  /* line 135, assets/_media-queries.scss */
+  /* line 167, assets/_media-queries.scss */
   .footer-address .contact:last-of-type:after {
     content: '';
   }
