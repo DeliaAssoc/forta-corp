@@ -1339,22 +1339,55 @@ object {
     display: none;
   }
 
-  /* line 29, assets/_media-queries.scss */
-  .main-header .main-navigation {
-    display: block;
+  /* line 27, assets/_media-queries.scss */
+  .main-header {
+    color: #bcbec0;
   }
-  /* line 33, assets/_media-queries.scss */
+  /* line 30, assets/_media-queries.scss */
+  .main-header a {
+    color: #bcbec0;
+  }
+  /* line 34, assets/_media-queries.scss */
+  .main-header .main-navigation {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  /* line 46, assets/_media-queries.scss */
   .main-header .social-media-links {
-    display: inherit;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  /* line 58, assets/_media-queries.scss */
+  .main-header .site-motto {
+    display: none;
   }
 
-  /* line 41, assets/_media-queries.scss */
+  /* line 65, assets/_media-queries.scss */
+  .main-navigation li {
+    margin: 0 20px 0 0;
+  }
+
+  /* line 73, assets/_media-queries.scss */
   .main-footer .col1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  /* line 47, assets/_media-queries.scss */
+  /* line 79, assets/_media-queries.scss */
   .main-footer .col2 {
     -webkit-box-align: end;
     -ms-flex-align: end;
@@ -1366,11 +1399,11 @@ object {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  /* line 59, assets/_media-queries.scss */
+  /* line 91, assets/_media-queries.scss */
   .main-footer .menu-menu-1-container {
     width: 60%;
   }
-  /* line 62, assets/_media-queries.scss */
+  /* line 94, assets/_media-queries.scss */
   .main-footer .menu-menu-1-container ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1380,38 +1413,38 @@ object {
     justify-content: space-between;
     margin: 0 30px 0 0;
   }
-  /* line 73, assets/_media-queries.scss */
+  /* line 105, assets/_media-queries.scss */
   .main-footer .social-media-links {
     margin: 0;
   }
-  /* line 77, assets/_media-queries.scss */
+  /* line 109, assets/_media-queries.scss */
   .main-footer .legal-box {
     display: inline-block;
   }
 
-  /* line 83, assets/_media-queries.scss */
+  /* line 115, assets/_media-queries.scss */
   .footer-address {
     text-align: left;
   }
-  /* line 86, assets/_media-queries.scss */
+  /* line 118, assets/_media-queries.scss */
   .footer-address .address {
     display: inline-block;
     padding: 0 5px 0 0;
   }
-  /* line 91, assets/_media-queries.scss */
+  /* line 123, assets/_media-queries.scss */
   .footer-address .contact {
     display: inline-block;
     padding: 0 15px 0 0;
     position: relative;
   }
-  /* line 96, assets/_media-queries.scss */
+  /* line 128, assets/_media-queries.scss */
   .footer-address .contact:after {
     content: '|';
     position: absolute;
     right: 3px;
     top: 0;
   }
-  /* line 103, assets/_media-queries.scss */
+  /* line 135, assets/_media-queries.scss */
   .footer-address .contact:last-of-type:after {
     content: '';
   }
