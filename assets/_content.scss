@@ -81,6 +81,7 @@ a.company-division {
 
 	.division-block-logo {
 		height: 75px;
+		-ms-interpolation-mode: bicubic;
 	}
 
 	p {
@@ -101,5 +102,31 @@ a.company-division {
 			right: -10px;
 			top: -1px;
 		}
+	}
+}
+
+// 404 Page
+.error-404 {
+	text-align: center;
+
+	.page-title {
+		color: $blackish;
+		font-family: $rale-font;
+		line-height: 1.15em;
+		text-transform: uppercase;
+	}
+
+	.page-content {
+		padding: 30px 0;
+	}
+
+	p {
+		font-size: 18px;
+	}
+
+	.error-logo {
+		// max-width: 480px;
+		opacity: 0.5;
+		width: auto;
 	}
 }
