@@ -8,6 +8,7 @@
  */
 
 include( get_stylesheet_directory() . '/includes/customizer.php' );
+include( get_stylesheet_directory() . '/includes/theme_options.php' );
 
 if ( ! function_exists( 'forta_corporate_theme_setup' ) ) :
 	/**
@@ -104,11 +105,11 @@ add_action( 'after_setup_theme', 'forta_corporate_theme_content_width', 0 );
  */
 function forta_corporate_theme_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'forta-corporate-theme' ),
-		'id'            => 'sidebar-1',
+		'name'          => esc_html__( 'General Page Sidebar', 'forta-corporate-theme' ),
+		'id'            => 'general-sidebar',
 		'description'   => esc_html__( 'Add widgets here.', 'forta-corporate-theme' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
+		'before_widget' => '',
+		'after_widget'  => '',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
@@ -174,3 +175,21 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
+
+// Convert hex to rgb
+function hex2rgb($hex) {
+	$hex = str_replace("#", "", $hex);
+	
+	if(strlen($hex) == 3) {
+		$r = hexdec(substr($hex,0,1).substr($hex,0,1));
+		$g = hexdec(substr($hex,1,1).substr($hex,1,1));
+		$b = hexdec(substr($hex,2,1).substr($hex,2,1));
+	} else {
+		$r = hexdec(substr($hex,0,2));
+		$g = hexdec(substr($hex,2,2));
+		$b = hexdec(substr($hex,4,2));
+	}
+	$rgba = array($r, $g, $b );
+	
+	return $rgba; // returns an array with the rgb values
+}

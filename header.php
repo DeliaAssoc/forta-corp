@@ -21,6 +21,7 @@ $socialArray = array(
 	get_theme_mod( 'forta_corporate_social_vimeo_link' ),
 	get_theme_mod( 'forta_corporate_social_pinterest_link' )
 );
+
 ?>
 <!doctype html>
 <html id="top" <?php language_attributes(); ?>>
@@ -44,19 +45,36 @@ $socialArray = array(
 	<?php wp_head(); ?>
 
 	<?php if ( get_theme_mod( 'forta_corporate_accent_color' ) ) : ?>
+	<?php 
+		$Hex_color = get_field( 'page_accent_color' );
+		$RGBA_color = hex2rgb($Hex_color);
+		$Final_Rgb_color = implode(", ", $RGBA_color);
+	?>
 	<style>
 		::-moz-selection { background-color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>;}
 		::selection { background-color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
+		::-moz-selection { background-color: background-color: <?php the_field( 'page_accent_color' ); ?>; }
+		::selection { background-color: <?php the_field( 'page_accent_color' ); ?>; }
 		.site-accent { background-color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
 		.site-font-accent { color:  <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
 		.site-accent-border { border-color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?> !important;  }
 		.main-header a:hover { color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
 		.main-navigation li a:hover { color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
-		footer a:hover { color:  <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
-		footer li a:before { color:  <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
-		footer .col2 a:hover { color:  <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
-		.footer-contact .contact:after { color:  <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
+		footer a:hover { color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
+		footer li a:before { color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
+		footer .col2 a:hover { color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
+		.footer-contact .contact:after { color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
 		h2, h3 { color:  <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>;border-color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?> }
+		.page-accent { background-color: <?php the_field( 'page_accent_color' ); ?>; }
+		.page-accent-rgba { background-color: rgba( <?php echo $Final_Rgb_color; ?>, .75 ); }
+		.page-accent-font { color: <?php the_field( 'page_accent_color' ); ?>; }
+		.page-accent-border { border-color: <?php the_field( 'page_accent_color' ); ?>; }
+		.secondary ul li:before { color: <?php the_field( 'page_accent_color' ); ?>; }
+		.secondary h2, .secondary h3 { color: <?php the_field( 'page_accent_color' ); ?>; }
+		input[type=submit] { background-color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
+		.light-bg-form input { color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?> !important; border: 1px solid <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
+		.light-bg-form textarea { color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; border: 1px solid <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
+		.main-content-form label { color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
 	</style>
 	<?php endif; ?>
 </head>

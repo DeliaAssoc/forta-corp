@@ -50,59 +50,114 @@
 	width: 200px;
 }
 
-.company-divisions {
-	background-color: #d7d7d7;
-	padding: 30px 0;
+.main-content {
 
-	.constrain {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
+	ul {
+		margin: 0 0 1em 0;
+	}	
+}
+
+// General Pages
+.page-template-general,
+.page-template-contact-template {
+
+	.page-banner {
+		height: 250px;
+		padding: 50px 0 0 0;
+	}
+
+	h1 {
+		color: $white-color;
+		display: inline-block;
+		line-height: 1em;
+		margin: 0;
+		padding: 30px;
+		text-transform: uppercase;
+
 	}
 }
 
-a.company-division {
-	color: $white-color;
-	display: block;
-	font-size: 14px;
-	margin: 0 0 15px 0;
-	padding: 20px;
-	overflow: hidden;
+.secondary {
 
-	&:last-of-type {
-		margin: 0;
-	}
+	.main-content {
+		padding: 30px 0;
 
-	.division-block-logo {
-		height: 75px;
-		-ms-interpolation-mode: bicubic;
-	}
-
-	p {
-		line-height: 1.3em;
-	}
-
-	.division-link {
-		display: inline-block;
-		font-weight: 700;
-		position: relative;
-		text-transform: uppercase;
-
-		&:after {
-			content: '\f0da';
-			font-family: $fa;
-			font-size: 16px;
-			position: absolute;
-			right: -10px;
-			top: -1px;
+		.constrain {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
 		}
 	}
+
+	.sidebar-contact {
+		background-color: $lightest;
+		margin: 0 0 20px 0;
+		padding: 10px;
+
+		h2 {
+			text-transform: uppercase;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		input {
+			min-height: 40px;
+		}
+
+		input, textarea {
+			margin: 0 0 20px 0;
+			padding: 3px 10px;
+			width: 100%;
+		}
+
+		input[type=submit] {
+			color: $white-color;
+			margin: 0;
+		}
+	}
+
+	ul li {
+		margin: 0 0 5px 0;
+		padding: 0 0 0 15px;
+		position: relative;
+	
+		&:before {
+			content: '\2022';
+			display: block;
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+	}
+}
+
+// Contact Page
+.main-content-form label {
+	display: inline-block;
+	font-size: .75em;
+}
+
+.main-content-form input,
+.main-content-form textarea {
+	background-color: #f6f6f6;
+	margin: 0 0 10px 0;
+	padding: 3px 5px !important;
+	width: 100%;
+}
+
+.main-content-form input[type=submit] {
+	color: $white-color !important;
+	padding: 12px !important;
+}
+
+.gmap {
+    margin: 0 0 -8px 0;
 }
 
 // 404 Page

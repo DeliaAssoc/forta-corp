@@ -34,25 +34,25 @@
 		</section>
 
 		<section class="company-divisions">
-			<div class="constrain">
-				
-				<?php if ( have_rows( 'company_divisions' ) ) : ?>
+		<div class="constrain">
+			
+			<?php if ( have_rows( 'company_divisions', 'option' ) ) : ?>
 
-					<?php while( have_rows( 'company_divisions' ) ) : the_row(); ?>
-						<?php $dImage = get_sub_field( 'division_logo' ); ?>
+				<?php while( have_rows( 'company_divisions', 'option' ) ) : the_row(); ?>
+					<?php $dImage = get_sub_field( 'division_logo', 'option' ); ?>
 
-						<a href="<?php the_sub_field( 'link_url' ); ?>" class="company-division" style="background-color: <?php the_sub_field( 'background_color' ); ?>">
-							<img class="division-block-logo" src="<?php echo $dImage[ 'url' ] ?>" alt="<?php echo $dImage[ 'alt' ] ?>">
-							<p><?php the_sub_field( 'division_block_content' ); ?></p>
-							<span class="division-link"><?php the_sub_field( 'link_text' ); ?></span>
-						</a>
+					<a href="<?php the_sub_field( 'link_url', 'option' ); ?>" class="company-division" style="background-color: <?php the_sub_field( 'background_color', 'option' ); ?>">
+						<img class="division-block-logo" src="<?php echo $dImage[ 'url' ] ?>" alt="<?php echo $dImage[ 'alt' ] ?>">
+						<p><?php the_sub_field( 'division_block_content', 'option' ); ?></p>
+						<span class="division-link"><?php the_sub_field( 'link_text', 'option' ); ?></span>
+					</a>
 
-					<?php endwhile; ?>
+				<?php endwhile; ?>
 
-				<?php endif; ?>
+			<?php endif; ?>
 
-			</div>
-		</section>
+		</div>
+	</section>
 
 
 </article><!-- #post-<?php the_ID(); ?> -->

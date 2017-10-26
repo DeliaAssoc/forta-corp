@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 		$mobileNavHeight = $mobileMenu.outerHeight(),
 		$mobileClose = $mobileMenu.find( '#close-this' ),
 		$hPageLogoHeight = $( '.logo-container' ).outerHeight(),
-		$hMainContent = $( '.main-content' );
+		$hMainContent = $( '.page-template-homepage .main-content' );
 
 	// If window is smaller than 1024px
 	if ( $winWidth < 1024 )

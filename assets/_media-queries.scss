@@ -7,6 +7,15 @@
 			max-width: 460px;
 		}
 	}
+
+	// General Pages
+	.page-template-general,
+	.page-template-contact-template {
+	
+		.page-banner {
+			padding: 65px 0 0 0;
+		}
+	}
 }
 
 @media only screen and ( min-width: 568px ) {
@@ -40,6 +49,20 @@
 			background-color: $darkest !important;
 		}
 	}
+
+	// General Pages
+	.page-template-general,
+	.page-template-contact-template {
+		
+		.page-banner {
+			height: 300px;
+			padding: 100px 0 0 0;
+		}
+
+		h1 {
+			font-size: 34px;
+		}
+	}
 }
 
 @media only screen and ( min-width: 768px ) {
@@ -56,6 +79,36 @@
 		width: 275px;
 	}
 
+	// General Pages
+	.page-template-general,
+	.page-template-contact-template {
+		
+		.page-banner {
+			height: 325px;
+			padding: 115px 0 0 0;
+		}
+
+		h1 {
+			font-size: 42px;
+		}
+	}
+
+	// Contact Page
+	.input-wrapper {
+		
+		&.col-left {
+			float: left;
+		}
+
+		&.col-right {
+			float: right;
+		}
+	}
+
+	.input-half {
+		width: 49.5%;
+	}
+	
 	// Footer
 	.main-footer {
 
@@ -76,6 +129,31 @@
 
 		h1 {
 			font-size: 36px;
+		}
+	}
+
+	// General Pages
+	.secondary {
+		
+		.main-content {
+			
+			.constrain {
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+					-ms-flex-direction: row;
+						flex-direction: row;
+				-webkit-box-pack: justify;
+				    -ms-flex-pack: justify;
+				        justify-content: space-between;
+			}
+
+			.main-block {
+				width: 64%;
+			}
+
+			.general-sidebar {
+				width: 31%;
+			}
 		}
 	}
 }
@@ -238,6 +316,21 @@
 
 	}
 
+	// General Pages
+	.page-template-general,
+	.page-template-contact-template {
+		
+		.page-banner {
+			height: 350px;
+			padding: 125px 0 0 0;
+		}
+
+		h1 {
+			font-size: 42px;
+		}
+	}
+
+	// Footer
 	.footer-address {
 		text-align: left;
 

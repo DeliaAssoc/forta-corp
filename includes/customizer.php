@@ -53,6 +53,7 @@ function forta_corporate_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'forta_corporate_company_state', array( 'default' => __( '' ), 'forta_corporate' ) );
 	$wp_customize->add_setting( 'forta_corporate_company_zip', array( 'default' => __( '' ), 'forta_corporate' ) );
 	$wp_customize->add_setting( 'forta_corporate_company_country', array( 'default' => __( '' ), 'forta_corporate' ) );
+	$wp_customize->add_setting( 'forta_corporate_company_gmap', array( 'default' => __( '' ), 'forta_corporate' ) );
 	$wp_customize->add_setting( 'forta_corporate_company_tollfree', array( 'default' => __( '' ), 'forta_corporate' ) );
 	$wp_customize->add_setting( 'forta_corporate_company_email', array( 'default' => __( '' ), 'forta_corporate' ) );
 
@@ -114,6 +115,13 @@ function forta_corporate_customizer( $wp_customize ) {
 	    'label'    => __( 'Country', 'forta_corporate' ),
 	    'section'  => 'forta_corporate_companyinfo_section',
 	    'settings' => 'forta_corporate_company_country',
+	) ) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'forta_corporate_company_gmap', array(
+		'description' => __( 'Paste the Google Code Snippet Here starting with &lt;iframe&gt;. Please replace width to 100% and have the height set to at least 300.' ),
+	    'label'    => __( 'Google Map', 'forta_corporate' ),
+	    'section'  => 'forta_corporate_companyinfo_section',
+	    'settings' => 'forta_corporate_company_gmap',
 	) ) );
 
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'forta_corporate_company_tollfree', array(
