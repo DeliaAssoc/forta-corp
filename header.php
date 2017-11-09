@@ -75,6 +75,7 @@ $socialArray = array(
 		.light-bg-form input { color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?> !important; border: 1px solid <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
 		.light-bg-form textarea { color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; border: 1px solid <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
 		.main-content-form label { color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
+		.site-content a { color: <?php echo get_theme_mod( 'forta_corporate_accent_color' ); ?>; }
 	</style>
 	<?php endif; ?>
 </head>

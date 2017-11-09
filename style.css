@@ -1336,30 +1336,64 @@ a:active {
 }
 
 /* line 159, assets/_content.scss */
+.contact-sidebar {
+  margin: 0 0 20px 0;
+}
+
+/* line 163, assets/_content.scss */
+.sidebar-comp-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/* line 172, assets/_content.scss */
+.sidebar-comp-info > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/* line 182, assets/_content.scss */
+.sidebar-comp-info .top-info {
+  margin: 0 0 10px 0;
+}
+/* line 186, assets/_content.scss */
+.sidebar-comp-info .title {
+  font-weight: 700;
+}
+
+/* line 191, assets/_content.scss */
 .gmap {
   margin: 0 0 -8px 0;
 }
 
-/* line 164, assets/_content.scss */
+/* line 196, assets/_content.scss */
 .error-404 {
   text-align: center;
 }
-/* line 167, assets/_content.scss */
+/* line 199, assets/_content.scss */
 .error-404 .page-title {
   color: #231f20;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   line-height: 1.15em;
   text-transform: uppercase;
 }
-/* line 174, assets/_content.scss */
+/* line 206, assets/_content.scss */
 .error-404 .page-content {
   padding: 30px 0;
 }
-/* line 178, assets/_content.scss */
+/* line 210, assets/_content.scss */
 .error-404 p {
   font-size: 18px;
 }
-/* line 182, assets/_content.scss */
+/* line 214, assets/_content.scss */
 .error-404 .error-logo {
   opacity: 0.5;
   width: auto;
@@ -1769,13 +1803,19 @@ object {
     width: 49.25%;
   }
 
-  /* line 245, assets/_media-queries.scss */
+  /* line 243, assets/_media-queries.scss */
+  .contact-sidebar {
+    max-width: 327px;
+    padding: 20px 0 0 0;
+  }
+
+  /* line 251, assets/_media-queries.scss */
   .main-footer .col1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  /* line 251, assets/_media-queries.scss */
+  /* line 257, assets/_media-queries.scss */
   .main-footer .col2 {
     -ms-flex-line-pack: end;
     align-content: flex-end;
@@ -1790,23 +1830,23 @@ object {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  /* line 265, assets/_media-queries.scss */
+  /* line 271, assets/_media-queries.scss */
   .main-footer .col2 a {
     color: #bcbec0;
   }
-  /* line 269, assets/_media-queries.scss */
+  /* line 275, assets/_media-queries.scss */
   .main-footer .col2 .menu-menu-1-container {
     margin: 0;
   }
-  /* line 273, assets/_media-queries.scss */
+  /* line 279, assets/_media-queries.scss */
   .main-footer .col2 .social-media-links {
     margin: 0;
   }
-  /* line 278, assets/_media-queries.scss */
+  /* line 284, assets/_media-queries.scss */
   .main-footer .menu-menu-1-container {
     width: 60%;
   }
-  /* line 281, assets/_media-queries.scss */
+  /* line 287, assets/_media-queries.scss */
   .main-footer .menu-menu-1-container ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1816,25 +1856,25 @@ object {
     justify-content: space-between;
     margin: 0 30px 0 0;
   }
-  /* line 292, assets/_media-queries.scss */
+  /* line 298, assets/_media-queries.scss */
   .main-footer .social-media-links {
     margin: 0;
   }
-  /* line 296, assets/_media-queries.scss */
+  /* line 302, assets/_media-queries.scss */
   .main-footer .legal-box {
     display: inline-block;
     padding: 0 20px 0 0;
     position: relative;
   }
-  /* line 301, assets/_media-queries.scss */
+  /* line 307, assets/_media-queries.scss */
   .main-footer .legal-box:last-of-type {
     padding: 0;
   }
-  /* line 304, assets/_media-queries.scss */
+  /* line 310, assets/_media-queries.scss */
   .main-footer .legal-box:last-of-type:after {
     content: none;
   }
-  /* line 309, assets/_media-queries.scss */
+  /* line 315, assets/_media-queries.scss */
   .main-footer .legal-box:after {
     content: '|';
     position: absolute;
@@ -1842,46 +1882,46 @@ object {
     top: 0;
   }
 
-  /* line 323, assets/_media-queries.scss */
+  /* line 329, assets/_media-queries.scss */
   .page-template-general .page-banner,
   .page-template-contact-template .page-banner {
     height: 350px;
     padding: 125px 0 0 0;
   }
-  /* line 328, assets/_media-queries.scss */
+  /* line 334, assets/_media-queries.scss */
   .page-template-general h1,
   .page-template-contact-template h1 {
     font-size: 42px;
   }
 
-  /* line 334, assets/_media-queries.scss */
+  /* line 340, assets/_media-queries.scss */
   .footer-address {
     text-align: left;
   }
-  /* line 337, assets/_media-queries.scss */
+  /* line 343, assets/_media-queries.scss */
   .footer-address .address {
     display: inline-block;
     padding: 0 5px 0 0;
   }
 
-  /* line 343, assets/_media-queries.scss */
+  /* line 349, assets/_media-queries.scss */
   .footer-contact {
     height: 30px;
   }
-  /* line 346, assets/_media-queries.scss */
+  /* line 352, assets/_media-queries.scss */
   .footer-contact .contact {
     display: inline-block;
     padding: 0 15px 0 0;
     position: relative;
   }
-  /* line 351, assets/_media-queries.scss */
+  /* line 357, assets/_media-queries.scss */
   .footer-contact .contact:after {
     content: '|';
     position: absolute;
     right: 3px;
     top: 0;
   }
-  /* line 358, assets/_media-queries.scss */
+  /* line 364, assets/_media-queries.scss */
   .footer-contact .contact:last-of-type:after {
     content: '';
   }
