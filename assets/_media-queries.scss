@@ -90,6 +90,7 @@
 
 		h1 {
 			font-size: 42px;
+			max-width: 565px;
 		}
 	}
 
@@ -237,6 +238,14 @@
 
 	a.company-division {
 	    width: 49.25%;
+	}
+
+	.page-template-general,
+	.page-template-contact-template {
+		
+		h1 {
+			max-width: 600px;
+		}
 	}
 
 	// Contact Page

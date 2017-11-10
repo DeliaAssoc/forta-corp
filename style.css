@@ -1667,39 +1667,40 @@ object {
   .page-template-general h1,
   .page-template-contact-template h1 {
     font-size: 42px;
+    max-width: 565px;
   }
 
-  /* line 99, assets/_media-queries.scss */
+  /* line 100, assets/_media-queries.scss */
   .input-wrapper.col-left {
     float: left;
   }
-  /* line 103, assets/_media-queries.scss */
+  /* line 104, assets/_media-queries.scss */
   .input-wrapper.col-right {
     float: right;
   }
 
-  /* line 108, assets/_media-queries.scss */
+  /* line 109, assets/_media-queries.scss */
   .input-half {
     width: 49.5%;
   }
 
-  /* line 115, assets/_media-queries.scss */
+  /* line 116, assets/_media-queries.scss */
   .main-footer > .flexxed {
     flex-direction: row;
     justify-content: space-between;
   }
-  /* line 120, assets/_media-queries.scss */
+  /* line 121, assets/_media-queries.scss */
   .main-footer .footer-block {
     width: 50%;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 130, assets/_media-queries.scss */
+  /* line 131, assets/_media-queries.scss */
   .home h1 {
     font-size: 36px;
   }
 
-  /* line 140, assets/_media-queries.scss */
+  /* line 141, assets/_media-queries.scss */
   .secondary .main-content .constrain {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1709,35 +1710,35 @@ object {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-  /* line 150, assets/_media-queries.scss */
+  /* line 151, assets/_media-queries.scss */
   .secondary .main-content .main-block {
     width: 64%;
   }
-  /* line 154, assets/_media-queries.scss */
+  /* line 155, assets/_media-queries.scss */
   .secondary .main-content .general-sidebar {
     width: 31%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 164, assets/_media-queries.scss */
+  /* line 165, assets/_media-queries.scss */
   .mobile-nav {
     display: none;
   }
 
-  /* line 168, assets/_media-queries.scss */
+  /* line 169, assets/_media-queries.scss */
   .mobile-nav-btn {
     display: none;
   }
 
-  /* line 172, assets/_media-queries.scss */
+  /* line 173, assets/_media-queries.scss */
   .main-header {
     color: #bcbec0;
   }
-  /* line 175, assets/_media-queries.scss */
+  /* line 176, assets/_media-queries.scss */
   .main-header a {
     color: #bcbec0;
   }
-  /* line 179, assets/_media-queries.scss */
+  /* line 180, assets/_media-queries.scss */
   .main-header .main-navigation {
     -webkit-box-align: end;
     -ms-flex-align: end;
@@ -1749,7 +1750,7 @@ object {
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
-  /* line 191, assets/_media-queries.scss */
+  /* line 192, assets/_media-queries.scss */
   .main-header .social-media-links {
     -webkit-box-align: end;
     -ms-flex-align: end;
@@ -1761,61 +1762,67 @@ object {
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
-  /* line 203, assets/_media-queries.scss */
+  /* line 204, assets/_media-queries.scss */
   .main-header .site-motto {
     display: none;
   }
 
-  /* line 210, assets/_media-queries.scss */
+  /* line 211, assets/_media-queries.scss */
   .main-navigation li {
     margin: 0 20px 0 0;
   }
 
-  /* line 216, assets/_media-queries.scss */
+  /* line 217, assets/_media-queries.scss */
   .main-content {
     padding-bottom: 20px;
   }
 
-  /* line 220, assets/_media-queries.scss */
+  /* line 221, assets/_media-queries.scss */
   .site-content {
     padding: 120px 0 0 0;
   }
 
-  /* line 224, assets/_media-queries.scss */
+  /* line 225, assets/_media-queries.scss */
   .page-banner {
     height: 325px;
   }
 
-  /* line 228, assets/_media-queries.scss */
+  /* line 229, assets/_media-queries.scss */
   .logo-container {
     height: 325px;
     top: -160px;
     width: 325px;
   }
 
-  /* line 234, assets/_media-queries.scss */
+  /* line 235, assets/_media-queries.scss */
   .company-divisions {
     padding: 45px 0 30px 0;
   }
 
-  /* line 238, assets/_media-queries.scss */
+  /* line 239, assets/_media-queries.scss */
   a.company-division {
     width: 49.25%;
   }
 
-  /* line 243, assets/_media-queries.scss */
+  /* line 246, assets/_media-queries.scss */
+  .page-template-general h1,
+  .page-template-contact-template h1 {
+    max-width: 600px;
+  }
+
+  /* line 252, assets/_media-queries.scss */
   .contact-sidebar {
     max-width: 327px;
     padding: 20px 0 0 0;
   }
 
-  /* line 251, assets/_media-queries.scss */
+  /* line 260, assets/_media-queries.scss */
   .main-footer .col1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  /* line 257, assets/_media-queries.scss */
+  /* line 266, assets/_media-queries.scss */
   .main-footer .col2 {
     -ms-flex-line-pack: end;
     align-content: flex-end;
@@ -1830,23 +1837,23 @@ object {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  /* line 271, assets/_media-queries.scss */
+  /* line 280, assets/_media-queries.scss */
   .main-footer .col2 a {
     color: #bcbec0;
   }
-  /* line 275, assets/_media-queries.scss */
+  /* line 284, assets/_media-queries.scss */
   .main-footer .col2 .menu-menu-1-container {
     margin: 0;
   }
-  /* line 279, assets/_media-queries.scss */
+  /* line 288, assets/_media-queries.scss */
   .main-footer .col2 .social-media-links {
     margin: 0;
   }
-  /* line 284, assets/_media-queries.scss */
+  /* line 293, assets/_media-queries.scss */
   .main-footer .menu-menu-1-container {
     width: 60%;
   }
-  /* line 287, assets/_media-queries.scss */
+  /* line 296, assets/_media-queries.scss */
   .main-footer .menu-menu-1-container ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1856,25 +1863,25 @@ object {
     justify-content: space-between;
     margin: 0 30px 0 0;
   }
-  /* line 298, assets/_media-queries.scss */
+  /* line 307, assets/_media-queries.scss */
   .main-footer .social-media-links {
     margin: 0;
   }
-  /* line 302, assets/_media-queries.scss */
+  /* line 311, assets/_media-queries.scss */
   .main-footer .legal-box {
     display: inline-block;
     padding: 0 20px 0 0;
     position: relative;
   }
-  /* line 307, assets/_media-queries.scss */
+  /* line 316, assets/_media-queries.scss */
   .main-footer .legal-box:last-of-type {
     padding: 0;
   }
-  /* line 310, assets/_media-queries.scss */
+  /* line 319, assets/_media-queries.scss */
   .main-footer .legal-box:last-of-type:after {
     content: none;
   }
-  /* line 315, assets/_media-queries.scss */
+  /* line 324, assets/_media-queries.scss */
   .main-footer .legal-box:after {
     content: '|';
     position: absolute;
@@ -1882,46 +1889,46 @@ object {
     top: 0;
   }
 
-  /* line 329, assets/_media-queries.scss */
+  /* line 338, assets/_media-queries.scss */
   .page-template-general .page-banner,
   .page-template-contact-template .page-banner {
     height: 350px;
     padding: 125px 0 0 0;
   }
-  /* line 334, assets/_media-queries.scss */
+  /* line 343, assets/_media-queries.scss */
   .page-template-general h1,
   .page-template-contact-template h1 {
     font-size: 42px;
   }
 
-  /* line 340, assets/_media-queries.scss */
+  /* line 349, assets/_media-queries.scss */
   .footer-address {
     text-align: left;
   }
-  /* line 343, assets/_media-queries.scss */
+  /* line 352, assets/_media-queries.scss */
   .footer-address .address {
     display: inline-block;
     padding: 0 5px 0 0;
   }
 
-  /* line 349, assets/_media-queries.scss */
+  /* line 358, assets/_media-queries.scss */
   .footer-contact {
     height: 30px;
   }
-  /* line 352, assets/_media-queries.scss */
+  /* line 361, assets/_media-queries.scss */
   .footer-contact .contact {
     display: inline-block;
     padding: 0 15px 0 0;
     position: relative;
   }
-  /* line 357, assets/_media-queries.scss */
+  /* line 366, assets/_media-queries.scss */
   .footer-contact .contact:after {
     content: '|';
     position: absolute;
     right: 3px;
     top: 0;
   }
-  /* line 364, assets/_media-queries.scss */
+  /* line 373, assets/_media-queries.scss */
   .footer-contact .contact:last-of-type:after {
     content: '';
   }
