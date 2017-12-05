@@ -1324,23 +1324,24 @@ a:active {
 .main-content-form input,
 .main-content-form textarea {
   background-color: #f6f6f6;
+  border: 1px solid #e1e1e1;
   margin: 0 0 10px 0;
   padding: 3px 5px !important;
   width: 100%;
 }
 
-/* line 154, assets/_content.scss */
+/* line 155, assets/_content.scss */
 .main-content-form input[type=submit] {
   color: #FFFFFF !important;
   padding: 12px !important;
 }
 
-/* line 159, assets/_content.scss */
+/* line 160, assets/_content.scss */
 .contact-sidebar {
   margin: 0 0 20px 0;
 }
 
-/* line 163, assets/_content.scss */
+/* line 164, assets/_content.scss */
 .sidebar-comp-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1350,7 +1351,7 @@ a:active {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-/* line 172, assets/_content.scss */
+/* line 173, assets/_content.scss */
 .sidebar-comp-info > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1360,40 +1361,40 @@ a:active {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-/* line 182, assets/_content.scss */
+/* line 183, assets/_content.scss */
 .sidebar-comp-info .top-info {
   margin: 0 0 10px 0;
 }
-/* line 186, assets/_content.scss */
+/* line 187, assets/_content.scss */
 .sidebar-comp-info .title {
   font-weight: 700;
 }
 
-/* line 191, assets/_content.scss */
+/* line 192, assets/_content.scss */
 .gmap {
   margin: 0 0 -8px 0;
 }
 
-/* line 196, assets/_content.scss */
+/* line 197, assets/_content.scss */
 .error-404 {
   text-align: center;
 }
-/* line 199, assets/_content.scss */
+/* line 200, assets/_content.scss */
 .error-404 .page-title {
   color: #231f20;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   line-height: 1.15em;
   text-transform: uppercase;
 }
-/* line 206, assets/_content.scss */
+/* line 207, assets/_content.scss */
 .error-404 .page-content {
   padding: 30px 0;
 }
-/* line 210, assets/_content.scss */
+/* line 211, assets/_content.scss */
 .error-404 p {
   font-size: 18px;
 }
-/* line 214, assets/_content.scss */
+/* line 215, assets/_content.scss */
 .error-404 .error-logo {
   opacity: 0.5;
   width: auto;
